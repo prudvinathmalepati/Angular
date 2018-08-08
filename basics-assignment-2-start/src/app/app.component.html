@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+          <label> User Name :</label>
+          <input type="text" class="form-control" [(ngModel)]="userName"
+          (input) = "userNameModified()"/>
+          <p> {{ userName }}</p>
+
+          <button [disabled] = "!isUserNamePresent" (click) = "clearUserName()"
+           class="btn btn-primary"> Clear </button>
+        </div>
+    </div>
+</div>
