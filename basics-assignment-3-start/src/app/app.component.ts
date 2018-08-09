@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  display : String = "block";
+  display : String = "none";
   buttonClicks = [];
   count  = 0;
 
